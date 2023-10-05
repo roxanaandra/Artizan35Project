@@ -1,38 +1,860 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.restaurant_section {
+  max-width: 100%;
+  height: 700px;
+  background-image: url(assets/images/Rectangle\ 2\ \(1\).png);
+}
+
+.restaurant_section__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+}
+
+.restaurant_content__title {
+  font-family: 'Italianno', cursive;
+  color: #F1E8E8;
+  font-size: 150px;
+  box-shadow: inherit;
+  
+}
+
+.restaurant_content__text {
+  font-family: 'Italianno', cursive;
+  color: #F1E8E8;
+  font-size: 44px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.restaurant_content__button {
+  color: #F3E7E7;
+  width: 130px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid #F1E8E8;
+  text-align: center;
+  margin-left: 170px;
+  margin-top: 20px;
+  font-family: 'Inika', serif;
+  font-size: 18px;
+  font-weight: bold;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image_wine {
+  width: 100px;
+  height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.restaurantmenu_section {
+  width: 100%;
+  height: 380px;
+  background-color: #C8C3C3;
+}
+
+.restaurantmenu_content {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 380px;
+}
+
+.restaurant_menu {
+  display: flex;
+  gap: 100px;
+}
+
+.wines_text {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Inika', serif;
+  font-size: 22px;
+}
+
+.description__section {
+  width: 100%;
+  height: 800px;
+  background-color: #C8C3C3;
+
+}
+
+.description_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+  padding-top: 100px;
+}
+
+.description_textarea {
+  max-width: 380px;
+}
+
+.description_title {
+  font-family: 'Jura', sans-serif;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.description_text {
+  font-family: 'Jura', sans-serif;
+  margin-top: 30px;
+  font-size: 18px;
+  box-shadow: 2px inset;
+
+}
+
+.description_image {
+  max-width: 461px;
+  height: 601px;
+}
+
+.contact_section {
+  width: 100%;
+  height: 250px;
+  background-color: #C8C3C3;
+}
+
+.contact_content {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+ 
+ 
+}
+
+.text_contact {
+  margin-top: 8px;
+  font-family: 'Inika', serif;
+  font-size: 16px;
+}
+
+.contact {
+  margin-left: 20px;
+}
+
+.contact_title {
+  font-family: 'Inika', serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.img_contact {
+  width: 80px;
+  height: 80px;
+}
+
+.footer_section {
+  width: 100%;
+  height: 300px;
+  background-image: url(assets/images/footer.png);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
   flex-direction: column;
+}
+.footer_title {
+  font-family: 'Italianno', cursive;
+  font-size: 120px;
+  color: #F1E8E8;
+
+}
+
+.footer_text {
+  font-family: 'Inika', serif;
+  font-size: 16px;
+  color: #F1E8E8;
+  margin-top: 5px;
+
+}
+
+.header_section {
+  width: 100%;
+  height: 70px;
+  background-image: url(assets/images/headerheader.png);
+  opacity: 0.6;
+  padding: 10px; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  margin-right: 40px;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+
+
+.menu_content {
+  width: 100%;
+  height: 670px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.menu_food {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
+  margin-top: 40px;
+  position: absolute;
+
 }
 
-.App-link {
-  color: #61dafb;
+.menu_food__content {
+  width: 210px;
+  margin-left: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu_food__text {
+  color: #fff;
+  font-family: 'Inika', serif;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.menu_title {
+  color: #FFF;
+  font-family: 'Italianno', cursive;
+  text-align: left;
+  margin-left: 50px;
+  padding-top: 10px;
+  font-size: 38px;
+  text-decoration:underline;
+}
+
+.restaurant_wine {
+  max-height: 250;
+  max-width: 350;
+}
+
+.restaurant_content__button:hover {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.restaurant_wine:hover {
+  opacity: 0.8;
+}
+
+.header_links a:hover {
+  font-size: 42px;
+  margin-left: 10px;
+}
+
+.restaurant_content__text:hover {
+  margin-left: 2px;
+}
+
+.wines_text:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.header_links a {
+  text-decoration: none;
+  color: #fff;
+  color: #0F0A0A;
+  font-family: 'Italianno', cursive;
+  font-size: 34px;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.header_links {
+  margin-right: 20px; 
+}
+
+@media screen and (max-width: 609px) {
+  
+
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .restaurantmenu_section {
+    height: 800px;
+  }
+
+  .description__section {
+    height: 1000px;
+  }
+
+  .description_image {
+    display: none;
+  }
+  
+  .description_content {
+    flex-direction: column;
+  }
+
+  .description_textarea {
+    margin-top: 300px;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 665px) {
+
+  .contact_content {
+    justify-content: flex-start;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 626px) {
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+  }
+
+  .description_content {
+    flex-direction: column;
+  }
+
+  .description_image {
+    display: none;
+  }
+
+  .description_textarea {
+    margin-top: 800px;
+  }
+
+  .description__section {
+    height: 1500px;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 645px) {
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+  }
+
+  .description_image {
+    display: none;
+  }
+
+  .description__section {
+    height: 1500px;
+  }
+
+  .description_textarea {
+    margin-top: 800px;
+  }
+
+  .description_content {
+    flex-direction: column;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 70px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 645px) {
+  .description__section {
+    height: 900px;
+  }
+
+  .contact_content {
+    margin-left: 2px;
+    justify-content: flex-start;
+    margin-top: 100px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+  }
+
+  .description_image {
+    display: none;
+  }
+
+  .description__section {
+    height: 1500px;
+  }
+
+  .description_textarea {
+    margin-top: 800px;
+  }
+
+  .description_content {
+    flex-direction: column;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 70px;
+  }
+
+  .header_links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 723px) {
+  .contact_content {
+    
+    
+  }
+}
+
+@media screen and (max-width: 723px) {
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+  }
+
+  .description_image {
+    display: none;
+  }
+
+  .description__section {
+    height: 1500px;
+  }
+
+  .description_textarea {
+    margin-top: 800px;
+  }
+
+  .description_content {
+    flex-direction: column;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 70px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 780px) {
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+  }
+
+  .description_image {
+    display: none;
+  }
+
+  .description__section {
+    height: 1500px;
+  }
+
+  .description_textarea {
+    margin-top: 800px;
+  }
+
+  .description_content {
+    flex-direction: column;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 70px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 930px) {
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+  }
+
+  .description_image {
+    display: none;
+  }
+
+  .description__section {
+    height: 1500px;
+  }
+
+  .description_textarea {
+    margin-top: 800px;
+  }
+
+  .description_content {
+    flex-direction: column;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 180px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 976px) {
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+  }
+
+  .description_image {
+    display: none;
+  }
+
+  .description__section {
+    height: 1500px;
+  }
+
+  .description_textarea {
+    margin-top: 800px;
+  }
+
+  .description_content {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 100px;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 180px;
+  }
+
+  .footer_title {
+    font-size: 80px;
+  }
+
+  .footer__content {
+    align-items: flex-start;
+    margin-left: 100px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 988px) {
+  .contact_content {
+    padding-top: 300px;
+    margin-left: 2px;
+    justify-content: flex-start;
+  }
+
+  .contact_section {
+    height: 500px;
+
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 1235px) {
+  .restaurant_content__title {
+    font-size: 80px;
+  }
+
+  .restaurant_section__content {
+    justify-content: flex-start;
+    margin-left: 120px;
+  }
+
+  .restaurant_content__button {
+    margin-left: 60px;
+  }
+
+  .restaurantmenu_section {
+    height: 1200px;
+  }
+
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+    align-items: flex-start;
+    
+  }
+
+  .description_textarea {
+    margin-left: 40px;
+  }
+
+  .footer_title {
+    font-size: 90px;
+  }
+
+  .footer__content {
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1015px) {
+  .description_image {
+    display: none;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 1125px) {
+  .description_image {
+    display: none;
+  }
+
+  .restaurant_content__title {
+    font-size: 140px;
+    
+  }
+
+  .restaurant_section__content {
+    justify-content: center;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1356px) {
+
+  
+
+  .restaurantmenu_section {
+    height: 1200px;
+  }
+
+  .restaurant_menu {
+    flex-direction: column;
+    margin-top: 900px;
+    align-items: flex-start;
+    
+  }
+
+  .description_textarea {
+    margin-left: 40px;
+  }
+
+  .footer_title {
+    font-size: 90px;
+  }
+
+  .footer__content {
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+
+  .contact_content {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1239px) {
+  .description_image {
+    display: none;
+  }
+
+  .restaurant_content__title {
+     font-size: 170px;
+  }
+
+  .restaurant_content__button {
+    margin-left: 190px;
+  }
+
+  .restaurant_section__content {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact_content {
+    margin-left: 120px;
+    justify-content: center;
+  }
+
+  .footer_title {
+    font-size: 120px;
+  }
+
+  .footer__content {
+    align-items: center;
+  }
+
+  .description_content {
+    margin-left: 280px;
+  }
+
+  .restaurant_wine {
+    max-width: 240px;
+    max-height: 240px;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1262px) {
+  .description_image {
+    display: none;
+  }
+
+  .footer__content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact_content {
+    justify-content: center;
+    
+  }
+
+  .description_content {
+    margin-left: 320px;
+  }
+
+  .restaurant_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .footer__content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1314px) {
+  .description_image {
+    display: none;
   }
 }
